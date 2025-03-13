@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header & First Block</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="menu__icon">
+                <input type="checkbox" id="confirmation-block-toggle" class="confirmation__block--toggle">
+                <label for="confirmation-block-toggle" class="confirmation__block--button">
+                    <img src="./img/hamburger.svg" alt="hamburger-icon">
+                </label>
+
+                <!-- CONFIRMATION BLOCK -->
+                <div class="confirmation">
+                    <div class="confirmation__header">
+                        <h3 class="confirmation__header--title">Подтвердите заказ</h3>
+                        <label for="confirmation-block-toggle" class="confirmation__block--close">
+                            <img src="./img/x-icon.svg" alt="close-icon">
+                        </label>
+                    </div>
+
+                    <div class="confirmation__body">
+                        <h4 class="confirmation__body--title">Код подтверждения</h4>
+                        <p class="confirmation__body--description">Для подтверждения заказа. Мы вам отправили код на ваш
+                            номер +998 90 909 90 90</p>
+                        <label for="code-input">Код</label>
+                        <input id="code-input" type="text">
+                        <p class="confirmation__body--info">Получить код повторно можно через: <span>1:52</span></p>
+                        <button class="confirmation__body--approve">Подтвердить заказ</button>
+                        <button class="confirmation__body--cancel">Отменить</button>
+                    </div>
+                </div>
+
+                <!-- CONFIRMATION BLOCK BACKDROP -->
+                <div class="backdrop"></div>
+            </div>
+            <div class="search__bar">
+                <span class="search__icon">
+                    <img src="./img/search.svg" alt="search-icon">
+                </span>
+                <input type="text" placeholder="Искать на Glotr">
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- BREADCRUMB -->
+<section class="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <a href="#">Главная</a>
+            <div class="breadcrumb__icon">
+                <img src="./img/arrow-right.svg" alt="arrow-icon">
+            </div>
+            <a href="#">Товары</a>
+            <div class="breadcrumb__icon">
+                <img src="./img/arrow-right.svg" alt="arrow-icon">
+            </div>
+            <span class="active">Красота и здоровье</span>
+        </div>
+    </div>
+</section>
+
+<!-- TABS -->
+<section class="tabs">
+    <div class="container">
+        <div class="row">
+            <!--            <a href="#">Описание</a>-->
+            <input type="checkbox" id="confirmation-2-block-toggle" class="confirmation__block--toggle">
+            <label for="confirmation-2-block-toggle" class="confirmation__block--button confirmation__2--block__button">
+                Описание
+            </label>
+            <a href="#" class="active">Характеристика</a>
+            <a href="#">Продавец</a>
+            <a href="#">Отзывы</a>
+
+            <!-- CONFIRMATION BLOCK -->
+            <div class="confirmation">
+                <div class="confirmation__header">
+                    <h3 class="confirmation__header--title">Подтвердите заказ</h3>
+                    <label for="confirmation-2-block-toggle" class="confirmation__block--close">
+                        <img src="./img/x-icon.svg" alt="close-icon">
+                    </label>
+                </div>
+
+                <div class="container">
+                    <div class="confirmation__2--company">
+                        <div class="confirmation__2--company__img">
+                            <img src="./img/e-bidet.png" alt="company-icon">
+                        </div>
+                        <div class="confirmation__2--company__info">
+                            <p>E-bidet Uzbekistan</p>
+                            <span>Ташкент, Шайхантахурский район</span>
+                        </div>
+                    </div>
+
+                    <div class="confirmation__2--order">
+                        <img src="./img/checked.svg" alt="checked-icon">
+                        <p>Номер заказа: 3957</p>
+                        <span>Ваш заказ успешно принят <br> и передан на обработку продавцу.</span>
+                    </div>
+
+                    <ul class="confirmation__2--details">
+                        <li>
+                            <div>
+                                <img src="./img/confirmation-heart.svg" alt="">
+                                <span>Компания</span>
+                            </div>
+                            <span>E-bidet Uzbekistan</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/confirmation-location.svg" alt="">
+                                <span>Адрес</span>
+                            </div>
+                            <span>г.Ташкент, ул. Саларска <br> 35 В две строки</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/confirmation-clock.svg" alt="">
+                                <span>График работы</span>
+                            </div>
+                            <a href="#">
+                                <span class="red">Посмотреть</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/confirmation-phone-call.svg" alt="">
+                                <span>Номер телефона</span>
+                            </div>
+                            <span>+998 90 900 90 90</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/confirmation-globe.svg" alt="">
+                                <span>Сайт</span>
+                            </div>
+                            <a href="#">
+                                <span class="red">wellblue.gl.uz</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="confirmation__2--button">
+                        Все товары продавца
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- CONFIRMATION BLOCK BACKDROP -->
+            <div class="backdrop"></div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCT IMAGE SLIDER -->
+<section class="carousel">
+    <img class="carousel__saved" src="./img/heart-red.svg" alt="like">
+    <div class="carousel__block">
+        <div class="carousel__wrapper">
+            <div class="carousel__item">
+                <img src="./img/product.png" alt="product">
+            </div>
+            <div class="carousel__item">
+                <img src="./img/product.png" alt="product">
+            </div>
+            <div class="carousel__item">
+                <img src="./img/product.png" alt="product">
+            </div>
+            <div class="carousel__item">
+                <img src="./img/product.png" alt="product">
+            </div>
+            <div class="carousel__item">
+                <img src="./img/product.png" alt="product">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DETAILS -->
+<section class="details">
+    <div class="container">
+        <h4 class="details__title">Apple Macbook air, M1, 512 SSD gb, 32gb RAM</h4>
+        <div class="d-flex align-center">
+            <span class="details__status">Нет в наличии</span>
+            <span class="details__code">Код 32453</span>
+        </div>
+        <p class="details__price">12 850 000 <span>сум/шт</span></p>
+        <div class="details__buttons">
+            <button class="details__check--instock">Уточнить наличие</button>
+            <button class="details__chat">
+                <img src="./img/message.svg" alt="chat-icon">
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- DESCRIPTION -->
+<section class="description">
+    <div class="container">
+        <h4 class="description__title global__title">Описание</h4>
+        <div class="description__text--container">
+            <input type="checkbox" id="description-show-more" class="description__toggle global__toggle">
+            <p class="description__description description__text">
+                Оптический привод
+                С новой силой. С появлением чипа Apple M1 наш самый тонкий и лёгкий ноутбук полностью преобразился.
+                Центральный процессор теперь работает до 3,5 раза быстрее. Графический — до 5 раз. А благодаря нашей
+                передовой системе Neural Engine скорость машинного обучения возросла до 9 раз. Новый Mac. Book Air
+                работает
+                без подзарядки дольше, чем предыдущие модели.
+                <span class="description__hidden--text">
+                    Оптический привод
+                    С новой силой. С появлением чипа Apple M1 наш самый тонкий и лёгкий ноутбук полностью преобразился.
+                    Центральный процессор теперь работает до 3,5 раза быстрее. Графический — до 5 раз. А благодаря нашей
+                    передовой системе Neural Engine скорость машинного обучения возросла до 9 раз. Новый Mac. Book Air
+                    работает без подзарядки дольше, чем предыдущие модели.
+                </span>
+            </p>
+            <label for="description-show-more" class="description__showmore global__showmore">
+                Показать все
+                <img src="./img/arrow-down.svg" alt="arrow-down">
+            </label>
+        </div>
+    </div>
+</section>
+
+<!-- CHARACTERISTICS -->
+<section class="characteristics">
+    <h4 class="characteristics__title global__title">Характеристики</h4>
+
+    <input type="checkbox" id="characteristics-show-more" class="global__toggle characteristics__toggle">
+
+    <ul class="characteristics__list">
+        <li class="characteristics__item">
+            <span>Код товара</span>
+            <span>MGN93RU/A</span>
+        </li>
+        <li class="characteristics__item">
+            <span>Производитель</span>
+            <span>Apple</span>
+        </li>
+        <li class="characteristics__item">
+            <span>Разрешение экрана</span>
+            <span>2560x1600</span>
+        </li>
+        <li class="characteristics__item">
+            <span>Количество ядер процессора</span>
+            <span>8</span>
+        </li>
+        <li class="characteristics__item">
+            <span>Оптический привод</span>
+            <span>Отсутствует</span>
+        </li>
+        <li class="characteristics__item hidden">
+            <span>Код товара</span>
+            <span>MGN93RU/A</span>
+        </li>
+        <li class="characteristics__item hidden">
+            <span>Производитель</span>
+            <span>Apple</span>
+        </li>
+        <li class="characteristics__item hidden">
+            <span>Разрешение экрана</span>
+            <span>2560x1600</span>
+        </li>
+    </ul>
+
+    <div class="container">
+        <label for="characteristics-show-more" class="global__showmore characteristics__showmore">
+            Показать все
+            <img src="./img/arrow-down.svg" alt="arrow-down">
+        </label>
+    </div>
+</section>
+
+<!-- PAYMENT -->
+<section class="payment">
+    <div class="container">
+
+        <h4 class="payment__title global__title">Способы оплаты</h4>
+
+        <input type="checkbox" id="payment-show-more" class="global__toggle payment__toggle">
+
+        <ul class="payment__list">
+            <li class="payment__item">Наличными</li>
+            <li class="payment__item">Перечислением</li>
+            <li class="payment__item">Терминал UzCard</li>
+            <li class="payment__item">Терминал HUMO</li>
+            <li class="payment__item">POS терминал</li>
+            <li class="payment__item">Рayme</li>
+            <li class="payment__item hidden">Click</li>
+            <li class="payment__item hidden">Test</li>
+            <li class="payment__item hidden">Testoviy</li>
+        </ul>
+
+        <label for="payment-show-more" class="global__showmore payment__showmore">
+            Подробно
+            <img src="./img/arrow-down.svg" alt="arrow-down">
+        </label>
+    </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="delivery">
+    <div class="container">
+
+        <h4 class="delivery__title global__title">Способы оплаты</h4>
+
+        <input type="checkbox" id="delivery-show-more" class="global__toggle delivery__toggle">
+
+        <ul class="delivery__list">
+            <li class="delivery__item">Доставка куръером</li>
+            <li class="delivery__item">Доставка почтой</li>
+            <li class="delivery__item">Доставка тест 1</li>
+            <li class="delivery__item hidden">Доставка тест 2</li>
+            <li class="delivery__item hidden">Доставка тест 3</li>
+            <li class="delivery__item hidden">Доставка тест 4</li>
+        </ul>
+
+        <label for="delivery-show-more" class="global__showmore delivery__showmore">
+            Подробно
+            <img src="./img/arrow-down.svg" alt="arrow-down">
+        </label>
+    </div>
+</section>
+
+<!-- SELLER -->
+<section class="seller">
+    <div class="container">
+        <div class="seller__header--block">
+            <h4 class="seller__title global__titl">Продавец</h4>
+            <a class="seller__link" href="#">Перейти на сайт</a>
+        </div>
+
+        <div class="row">
+            <div class="seller__company--icon">
+                <img src="./img/amazon.png" alt="company-icon">
+            </div>
+            <div class="seller__company--name">
+                <p>Amazon</p>
+                <span>г. Ташкент, Узбекистан</span>
+            </div>
+        </div>
+
+        <div class="seller__company--details">
+            <img src="./img/clock.svg" alt="">
+            <p>Сегодня работает до 18:00<span>Весь график</span></p>
+        </div>
+
+        <div class="seller__company--details">
+            <img src="./img/phone-call.svg" alt="">
+            <p>+998 99 ...<span>show more</span></p>
+        </div>
+
+        <div class="seller__company--details">
+            <img src="./img/globe.svg" alt="">
+            <p><span>amazon.com</span></p>
+        </div>
+
+        <div class="seller__buttons">
+            <button class="all__products">Все товары продавца</button>
+            <button class="order__call">Заказать звонок</button>
+        </div>
+    </div>
+</section>
+
+<!-- SIMILAR PRODUCTS -->
+<section class="similar">
+    <div class="container">
+        <a href="#" class="mini__title">
+            <span>Похожие товары продавца</span>
+            <img src="./img/arrow-right.svg" alt="">
+        </a>
+
+        <div class="mini__products">
+            <div class="mini__product">
+                <span class="mini__discount">-15%</span>
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-2.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <span class="mini__discount">-10%</span>
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <span class="mini__discount">-20%</span>
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RECOMMENDED PRODUCTS -->
+<section class="recommended">
+    <div class="container">
+        <a href="#" class="mini__title">
+            <span>Рекомендуем</span>
+            <img src="./img/arrow-right.svg" alt="">
+        </a>
+
+        <div class="mini__products">
+            <div class="mini__product">
+                <span class="mini__discount">-15%</span>
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-2.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <span class="mini__discount">-10%</span>
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <span class="mini__discount">-20%</span>
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+            <div class="mini__product">
+                <img class="mini__product--saved" src="./img/heart-white.svg" alt="saved">
+                <div class="mini__product--img">
+                    <img src="./img/mini-product-1.png" alt="">
+                </div>
+                <div class="mini__product--details">
+                    <p class="mini__product--details__name">Knife Sharpener Tool Professional</p>
+                    <p class="mini__product--details__status">В наличии</p>
+                    <p class="mini__product--details__price">3 000 000 <span>сум</span></p>
+                </div>
+                <div class="mini__product--location">
+                    <p>Media Park</p>
+                    <span>г. Ташкент</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MOST SEARCHED -->
+<section class="most__searched">
+    <div class="container">
+        <a href="#" class="most__searched--title">
+            <span>У нас ищут</span>
+            <img src="./img/arrow-right.svg" alt="">
+        </a>
+
+        <div class="most__searched--cards">
+            <div class="most__searched--card">
+                <a href="#">
+                    Камера
+                </a>
+            </div>
+            <div class="most__searched--card">
+                <a href="#">
+                    Куртки женские
+                </a>
+            </div>
+            <div class="most__searched--card">
+                <a href="#">
+                    Автозапчасти
+                </a>
+            </div>
+            <div class="most__searched--card">
+                <a href="#">
+                    Тест 1
+                </a>
+            </div>
+            <div class="most__searched--card">
+                <a href="#">
+                    Тест 2
+                </a>
+            </div>
+            <div class="most__searched--card">
+                <a href="#">
+                    Тест 3
+                </a>
+            </div>
+        </div>
+
+        <div class="most__searched--cards">
+            <div class="most__searched--card">
+                <a href="#">
+                    Радиаторы и обогреватели
+                </a>
+            </div>
+            <div class="most__searched--card">
+                <a href="#">
+                    Спортивные костюмы
+                </a>
+            </div>
+            <div class="most__searched--card">
+                <a href="#">
+                    Тест 4
+                </a>
+            </div>
+            <div class="most__searched--card">
+                <a href="#">
+                    Тест 5
+                </a>
+            </div>
+            <div class="most__searched--card">
+                <a href="#">
+                    Тест 6
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

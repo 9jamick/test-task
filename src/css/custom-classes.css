@@ -1,0 +1,41 @@
+.d-flex {
+    display: flex;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.global__title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: middle;
+    color: #344054;
+}
