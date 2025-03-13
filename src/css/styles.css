@@ -97,8 +97,7 @@ html, body {
 }
 
 .breadcrumb .active {
-    color: red;
-    font-weight: bold;
+    color: #F24236;
 }
 
 /* ---------------------- */
